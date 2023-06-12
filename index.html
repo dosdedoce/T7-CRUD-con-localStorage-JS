@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>T7 - CRUD</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <header>
+          <h1>CRUD con local storage JS</h1>
+          <p>
+               Vamos a llevar esta experiencia a otro nivel, vas a crear una aplicación web de lista de tareas (Todo List) que permita a los usuarios ingresar y administrar sus tareas de manera sencilla y efectiva. 
+          </p>
+     </header>
+     <main>
+          <section id="containerMain">
+               <article id="forForm">  
+                    <h3>Formulario</h3>
+                    <form action="#" id="formUserTask">
+                         <!-- <legend>
+                              <label for="name">Escribe tu nombre, </label>
+                              <input type="text" id="name" class="outlineNone">
+                         </legend> -->
+                         <legend>
+                              <label for="task">Escribe la tarea, </label>
+                              <input type="text" id="task" class="outlineNone">
+                         </legend>
+                         <legend id="radioProcess">
+                              Categoria de las tareas:<br>
+                              <input type="radio" name="taskRadio" value="casa" checked/>Casa
+                              <input type="radio" name="taskRadio" value="trabajo"/>Trabajo
+                              <input type="radio" name="taskRadio" value="estudio"/>Estudio                
+                         </legend>
+                         <input type="submit" value="Agregar" id="buttonSubmit">
+                    </form>
+
+               </article>
+               <article id="forView">
+                    <h3>Data List</h3>
+                    <form action="#" id="formUpdate">
+                         <legend>
+                              <label for="taskU">Tarea, </label>
+                              <input type="text" id="taskU" class="outlineNone">
+                         </legend>
+                         <legend id="radioUpdate">
+                              Categoria:<br>
+                              <input type="radio" name="updateRadio" value="casa"/>Casa
+                              <input type="radio" name="updateRadio" value="trabajo"/>Trabajo
+                              <input type="radio" name="updateRadio" value="estudio"/>Estudio                
+                         </legend>
+                         <button id="buttonUpdate">Aceptar Cambios</button>
+                    </form>
+                    <div id="listTask">
+                         
+                    </div>
+                    <!-- <button id="eraseLocalStore">Eliminar</button> -->
+               </article>
+          </section>
+     </main>
+</body>
+     <script src="js/script.js"></script>
+</html>
