@@ -8,6 +8,11 @@ body{
      width: 90%;
      margin: 0 auto;
 }
+header{
+     margin: 0 auto;
+     background-color: rgba(220, 20, 60, 0.096);
+     padding: 2em 2em;
+}
 h1{
      font-size: 2rem;
 }
@@ -32,11 +37,13 @@ legend{
 }
 #forForm{
      width: 50%;
-     background-color: #E0FFFF;
+     background-color: #e0ffff44;
+     padding: 2em 2em;
 }
 #forView{
      width: 50%;
-     background-color: #FFF8DC;
+     background-color: #fff8dc44;
+     padding: 2em 2em;
 }
 #name{
      color: #2F4F4F;
@@ -90,31 +97,19 @@ form input[type="radio"]{
      padding:8px 30px;
 	margin-top:32px;
      border: none;
-	border-radius:5px;
+	border-radius:50px;
 	display:block;
 	color:#fff;
-	background-color:#000;
-}
-#buttonSubmit:hover ,#buttonUpdate:hover{
-     cursor:pointer;
-     color:#000;
-	background-color:#ffffff;
+	background-color:#025BC8;
 }
 
-/* form input[type="submit"]{
-	padding:8px 30px;
-	margin-top:32px;
-     border: none;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-form input[type="submit"]:hover{
-	cursor:pointer;
-     color:#000;
+#buttonSubmit:hover ,#buttonUpdate:hover{
+     cursor:pointer;
+     color:#025BC8;
 	background-color:#ffffff;
-} */
+     border: 1px solid #025BC8;
+}
+
 input:focus, input[type]:focus {
      background-color: #00000000;
      outline: 0 none;
